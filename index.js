@@ -60,7 +60,8 @@ const record = [
     { year: "1960", result: "N/A"}
   ]
 
-  function superbowlWin(){
-      let win = record.find(x => x.result === "W")
-      return win.year
-  }
+  function superbowlWin(array){
+     let win = array.find(x => x.result === "W")
+    if (win) {
+        return win.year
+    }}
